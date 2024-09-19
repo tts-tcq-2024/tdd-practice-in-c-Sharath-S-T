@@ -1,6 +1,6 @@
-Test Number , Description , Input , Output
-TC1 , Empty String , "" , 0
-TC2 , Single number , "1" , 1
+Test Number,Description,Input,Output
+TC1,Empty String,"",0
+TC2,Single number,"1",1
 TC3
 TC4
 TC5
