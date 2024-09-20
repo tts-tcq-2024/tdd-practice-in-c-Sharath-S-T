@@ -11,3 +11,4 @@ TC9,Handle Sum Exactly 1000,Verifies that numbers totaling exactly 1000 are summ
 TC10,Custom Delimiter,Checks if a custom delimiter is used correctly in summing numbers,"//;\n1;2",3
 TC11,Multiple Custom Delimiters,Verifies the calculator supports multiple custom delimiters,"//[*][%]\n1*2%3",6
 TC12,Only Custom Delimiter,Ensures input with only a custom delimiter and no numbers returns 0,"//;\n",0
+TC13,Numbers Equal to 1000 Included in Sum,Verifies that numbers equal to 1000 are included in the sum,"2,1000",1002
