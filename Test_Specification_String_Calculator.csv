@@ -1,13 +1,13 @@
 Test Number,TestName,Description,Input,Expected Output
-TC1,Empty String,"",0
-TC2,Single number,"1",1
-TC3,Two numbers separated by comma,"1,2",3
-TC4,Multiple numbers separated by comma,"1,3,5,7",16
-TC5,Numbers greater than 1000,"1,1001,200000",1
-TC6,With new line in between,"2\n3\n4",9
-TC7,Only Delimiters,"\\#\\n\n\*-@",0
-TC8,Negative numbers,"-1,2,-3,1",negatives not allowed
-TC9,Handle Sum Exactly 1000,"500,500",1000
-TC10,Expect Sum with Custom Delimiter,"//;\n1;2",3
-TC11,Handle Multiple Custom Delimiters,"//[*][%]\n1*2%3",6
-TC15,Handle Input with Only Custom Delimiter and No Numbers,"//;\n",0
+TC1,Empty String,Verifies that an empty string returns 0,"",0
+TC2,Single Number,Verifies that a single number returns the same number,"1",1
+TC3,Two Numbers,Checks if two numbers separated by a comma are summed correctly,"1,2",3
+TC4,Multiple Numbers,Checks if multiple numbers separated by commas are summed correctly,"1,3,5,7",16
+TC5,Ignore Numbers Greater Than 1000,Ensures numbers greater than 1000 are ignored in the sum,"1,1001,200000",1
+TC6,Sum With Newline Delimiters,Verifies that newlines between numbers are handled as delimiters,"2\n3\n4",9
+TC7,Only Delimiters,Verifies that input containing only delimiters returns 0,"\\#\\n\n\*-@",0
+TC8,Negative Numbers,Ensures that negative numbers trigger an exception with a specific message,"-1,2,-3,1",negatives not allowed
+TC9,Handle Sum Exactly 1000,Verifies that numbers totaling exactly 1000 are summed correctly,"500,500",1000
+TC10,Custom Delimiter,Checks if a custom delimiter is used correctly in summing numbers,"//;\n1;2",3
+TC11,Multiple Custom Delimiters,Verifies the calculator supports multiple custom delimiters,"//[*][%]\n1*2%3",6
+TC12,Only Custom Delimiter,Ensures input with only a custom delimiter and no numbers returns 0,"//;\n",0
